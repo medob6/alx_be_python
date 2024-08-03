@@ -13,21 +13,22 @@ def main():
         if not choice.isdigit():
             print("Invalid choice. Please enter a number between 1 and 4.")
             continue
-        if choice == '1':
+        choice = int(choice)
+        if choice == 1:
             # Prompt for and add an item
             shopping_list.append(input("Enter the item to add:"))
-        elif choice == '2':
+        elif choice == 2:
             # Prompt for and remove an item
             Item = input("Enter the item to remove:")
             if Item in shopping_list:
                 shopping_list.remove(Item)
             else:
                 print("Item is not in the List")
-        elif choice == '3':
+        elif choice == 3:
             # Display the shopping List
             for i in shopping_list:
                 print(i)
-        elif choice == '4':
+        elif choice == 4:
             print("Goodbye!")
             break
         else:
