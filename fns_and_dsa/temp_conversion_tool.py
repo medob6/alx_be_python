@@ -14,4 +14,4 @@ try:
     else:
         print("invalid choice")
 except ValueError:
-    print("Invalid input. Please enter an integer.")
+    print("Invalid temperature. Please enter a numeric value.")
